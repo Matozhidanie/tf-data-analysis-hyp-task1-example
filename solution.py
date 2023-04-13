@@ -29,7 +29,7 @@ def solution(x_success: int,
     raznica = round((conv_script - conv_history), 3)
     # print(round((conv_script - conv_history), 3))
 
-    if raznica > uroven:
+    if raznica >= uroven:
         otvet = bool(1) # гипотезу отклоняем (скрипт работает)
     else:
         otvet = bool(0) # гипотезу не отклоняем (скрипт фигня)

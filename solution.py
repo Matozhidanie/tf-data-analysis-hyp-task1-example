@@ -9,7 +9,7 @@ def solution(x_success: int,
              y_success: int, 
              y_cnt: int) -> bool:
     # уровень значимости
-    uroven = 0.082
+    uroven = 0.08
 
     # конверсия историческая
     conv_history = x_success / x_cnt
@@ -26,7 +26,8 @@ def solution(x_success: int,
     # альтернатива p>p0
 
     # вычисления разницы в процентах
-    raznica = round((conv_script - conv_history), 3)
+    # raznica = round((conv_script - conv_history), 3)
+    raznica = (conv_script - conv_history)
     # print(round((conv_script - conv_history), 3))
 
     if raznica > uroven:
